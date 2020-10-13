@@ -1,4 +1,4 @@
-# Miro Web Bot Block for Moodle #
+# Miro Translate Activity for Moodle #
 
 ## Current version ##
 
