@@ -16,18 +16,29 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version of mirotranslate
+ * The mod_mirotranslate renderer.
  *
  * @package   mod_mirotranslate
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+namespace mod_mirotranslate\output;
 
-$plugin->version   = 2020101500;            // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2018050800;            // Requires this Moodle version
-$plugin->component = 'mod_mirotranslate';   // Full name of the plugin (used for diagnostics)
-$plugin->release = 'v1.1';
-$plugin->maturity = MATURITY_STABLE;
-$plugin->cron      = 0;
+defined('MOODLE_INTERNAL') || die;
+
+use plugin_renderer_base;
+
+class renderer extends plugin_renderer_base {
+    /**
+     * Defer to template.
+     *
+     * @param mirotranslate $mirotranslate
+     *
+     * @return string html for the page
+     */
+    public function render_mirotranslate($mirotranslate) {
+        $data = $mirotranslate->export_for_template($this);
+        return parent::render_from_template('mod_mirotranslate/mirotranslate', $data);
+    }
+}

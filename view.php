@@ -63,30 +63,15 @@ echo $OUTPUT->header();
 // Replace the following lines with you own code
 echo $OUTPUT->heading($mirotranslate->name);
 
-$addClasses = '';
 const RATIO = '1by1';
 
 if ($mirotranslate->intro) {
     echo $OUTPUT->box(format_module_intro('mirotranslate', $mirotranslate, $cm->id), 'generalbox mod_introbox', 'mirotranslateintro');
-} else {
-    $addClasses = ' py-3';
 }
 
-$html  = '<div class="container'. $addClasses .'">';
-$html .= '<div class="row">';
-$html .= '<div class="col-sm-12">';
-$html .= '<div class="card text-center">';
-$html .= '<div class="card-block">';
-$html .= '<div class="embed-responsive embed-responsive-' . RATIO . '">';
-$html .= '<iframe class="embed-responsive-item" title="' . $mirotranslate->name . '" src="' . $mirotranslate->externalurl . '" allowfullscreen></iframe>';
-$html .= '</div>';
-$html .= '</div>';
-$html .= '</div>';
-$html .= '</div>';
-$html .= '</div>';
-$html .= '</div>';
-
-echo($html);
+$renderer = $PAGE->get_renderer('mod_mirotranslate');
+$renderable = new \mod_mirotranslate\mirotranslate($mirotranslate);
+echo $renderer->render($renderable);
 
 // Finish the page
 echo $OUTPUT->footer();

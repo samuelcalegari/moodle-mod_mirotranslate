@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version of mirotranslate
+ * Catalan strings for mirotranslate
  *
  * @package   mod_mirotranslate
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
@@ -25,9 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020101500;            // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2018050800;            // Requires this Moodle version
-$plugin->component = 'mod_mirotranslate';   // Full name of the plugin (used for diagnostics)
-$plugin->release = 'v1.1';
-$plugin->maturity = MATURITY_STABLE;
-$plugin->cron      = 0;
+$string['modulename'] = 'Miro Translate';
+$string['modulenameplural'] = 'Miro Translate(s)';
+
+$string['mirotranslate'] = 'Miro Translate';
+$string['pluginadministration'] = 'Administració Miro Translate';
+$string['pluginname'] = 'Miro Translate';
+
+$string['mirotranslatename'] = 'Títol';
+$string['mirotranslatename_help'] = 'Títol del vídeo Miro Translate';
+$string['externalurl'] = 'URL extern';
+$string['externalurl_help'] = 'URL de la publicació web del projecte Miro Translate';

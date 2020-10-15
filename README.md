@@ -15,7 +15,7 @@ Miro Translate is a hybrid tool that builds bridges between the subtitler and ce
 Whether you have published a Miro Translate project on mtranslate.univ-perp.fr, with this plugin you can link this project in your Moodle courses in a simple way: in the course, create a new Miro Translate activity, and specify the external URL.
 
 ## Supported languages ##
-- english
+- english, french, catalan, spanish
 
 ## Installation ##
 
