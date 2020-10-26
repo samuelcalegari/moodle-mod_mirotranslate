@@ -37,7 +37,7 @@ class mod_mirotranslate_mod_form extends moodleform_mod {
         $mform->addElement('header', 'general', get_string('general', 'form'));
 
         // Add the standard "name" field
-        $mform->addElement('text', 'name', get_string('mirotranslatename', 'mirotranslate'), array('size'=>'64'));
+        $mform->addElement('text', 'name', get_string('mirotranslatename', 'mirotranslate'), array('size' => '64'));
         if (!empty($CFG->formatstringstriptags)) {
             $mform->setType('name', PARAM_TEXT);
         } else {
@@ -48,7 +48,7 @@ class mod_mirotranslate_mod_form extends moodleform_mod {
         $mform->addHelpButton('name', 'mirotranslatename', 'mirotranslate');
 
         // Add the standard "externalurl" field
-        $mform->addElement('url', 'externalurl', get_string('externalurl', 'mirotranslate'), array('size'=>'60'), array('usefilepicker'=>true));
+        $mform->addElement('url', 'externalurl', get_string('externalurl', 'mirotranslate'), array('size' => '60'), array('usefilepicker' => true));
         $mform->setType('externalurl', PARAM_RAW_TRIMMED);
         $mform->addRule('externalurl', null, 'required', null, 'client');
         $mform->addHelpButton('externalurl', 'externalurl', 'mirotranslate');
