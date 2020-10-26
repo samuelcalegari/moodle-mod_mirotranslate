@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -29,7 +28,7 @@ require_once($CFG->dirroot.'/course/moodleform_mod.php');
 
 class mod_mirotranslate_mod_form extends moodleform_mod {
 
-    function definition() {
+    public function definition() {
 
         global $COURSE;
         $mform =& $this->_form;
