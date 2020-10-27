@@ -47,12 +47,12 @@ class mirotranslate implements renderable, templatable {
     private $intro = null;
 
     /**
-     * @var object $mirotranslateInstance Some text to show how to pass data to a template.
+     * @var object $mirotranslateinstance Some text to show how to pass data to a template.
      */
-    public function __construct($mirotranslateInstance) {
-        $this->title = $mirotranslateInstance->name;
-        $this->url = $mirotranslateInstance->externalurl;
-        $this->intro = ($mirotranslateInstance->intro != "");
+    public function __construct($mirotranslateinstance) {
+        $this->title = $mirotranslateinstance->name;
+        $this->url = $mirotranslateinstance->externalurl;
+        $this->intro = ($mirotranslateinstance->intro != "");
     }
 
     /**
