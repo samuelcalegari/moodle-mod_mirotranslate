@@ -30,15 +30,29 @@ use templatable;
 use stdClass;
 
 class mirotranslate implements renderable, templatable {
-    /** @var object $mirotranslate_instance Some text to show how to pass data to a template. */
-    var $title = null;
-    var $url = null;
-    var $intro = null;
 
-    public function __construct($mirotranslate_instance) {
-        $this->title= $mirotranslate_instance->name;
-        $this->url= $mirotranslate_instance->externalurl;
-        $this->intro = ($mirotranslate_instance->intro != "");
+    /**
+     * @var string $title Title of the video
+     */
+    private $title = null;
+
+    /**
+     * @var string $url External URL of the video
+     */
+    private $url = null;
+
+    /**
+     * @var string $intro Description of the video
+     */
+    private $intro = null;
+
+    /**
+     * @var object $mirotranslateInstance Some text to show how to pass data to a template.
+     */
+    public function __construct($mirotranslateInstance) {
+        $this->title = $mirotranslateInstance->name;
+        $this->url = $mirotranslateInstance->externalurl;
+        $this->intro = ($mirotranslateInstance->intro != "");
     }
 
     /**

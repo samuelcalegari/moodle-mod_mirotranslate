@@ -32,7 +32,7 @@ if ($id) {
     $cm         = get_coursemodule_from_id('mirotranslate', $id, 0, false, MUST_EXIST);
     $course     = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
     $mirotranslate  = $DB->get_record('mirotranslate', array('id' => $cm->instance), '*', MUST_EXIST);
-} elseif ($n) {
+} else if ($n) {
     $mirotranslate  = $DB->get_record('mirotranslate', array('id' => $n), '*', MUST_EXIST);
     $course     = $DB->get_record('course', array('id' => $mirotranslate->course), '*', MUST_EXIST);
     $cm         = get_coursemodule_from_instance('mirotranslate', $mirotranslate->id, $course->id, false, MUST_EXIST);
@@ -50,7 +50,7 @@ $event->add_record_snapshot('course', $PAGE->course);
 $event->add_record_snapshot($PAGE->cm->modname, $mirotranslate);
 $event->trigger();
 
-/// Print the page header
+// Print the page header
 
 $PAGE->set_url('/mod/mirotranslate/view.php', array('id' => $cm->id));
 $PAGE->set_title($mirotranslate->name);

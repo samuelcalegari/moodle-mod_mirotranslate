@@ -39,8 +39,6 @@ function mirotranslate_add_instance($mirotranslate) {
 
     $mirotranslate->timecreated = time();
 
-    # You may have to add extra stuff in here #
-
     return $DB->insert_record('mirotranslate', $mirotranslate);
 }
 
@@ -76,7 +74,7 @@ function mirotranslate_delete_instance($id) {
         return false;
     }
 
-    # Delete any dependent records here #
+    // Delete any dependent records here
 
     $DB->delete_records('mirotranslate', array('id' => $mirotranslate->id));
 
