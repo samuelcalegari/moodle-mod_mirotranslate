@@ -28,7 +28,7 @@ global $DB;
 
 $logs = array(
     array('module' => 'mirotranslate', 'action' => 'add', 'mtable' => 'mirotranslate', 'field' => 'name'),
-    array('module' => 'mirotranslate', 'action' => 'update', 'mtable'=>'mirotranslate', 'field' => 'name'),
-    array('module' => 'mirotranslate', 'action' => 'view', 'mtable'=>'mirotranslate', 'field' => 'name'),
-    array('module' => 'mirotranslate', 'action' => 'view all', 'mtable'=>'mirotranslate', 'field' => 'name')
+    array('module' => 'mirotranslate', 'action' => 'update', 'mtable' => 'mirotranslate', 'field' => 'name'),
+    array('module' => 'mirotranslate', 'action' => 'view', 'mtable' => 'mirotranslate', 'field' => 'name'),
+    array('module' => 'mirotranslate', 'action' => 'view all', 'mtable' => 'mirotranslate', 'field' => 'name')
 );
