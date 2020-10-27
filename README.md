@@ -27,4 +27,4 @@ Moodle 3.1 or greater.
 
 ## Licence ##
 
-Released under the [MIT Licence](https://opensource.org/licenses/MIT)
+Released under the [GNU General Public License](https://opensource.org/licenses/GPL-3.0)
