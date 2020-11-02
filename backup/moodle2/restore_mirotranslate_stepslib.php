@@ -39,7 +39,7 @@ class restore_mirotranslate_activity_structure_step extends restore_activity_str
         $data = (object)$data;
         $oldid = $data->id;
         $data->course = $this->get_courseid();
-        
+
         // insert the mirotranslate record
         $newitemid = $DB->insert_record('mirotranslate', $data);
         // immediately after inserting "activity" record, call this

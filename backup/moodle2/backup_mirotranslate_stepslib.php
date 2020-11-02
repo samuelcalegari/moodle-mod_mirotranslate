@@ -24,7 +24,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
- /**
+/**
  * Define the complete mirotranslate structure for backup, with file and id annotations
  */
 class backup_mirotranslate_activity_structure_step extends backup_activity_structure_step {
