@@ -74,7 +74,7 @@ function mirotranslate_delete_instance($id) {
         return false;
     }
 
-    // Delete any dependent records here
+    // Delete any dependent records here.
 
     $DB->delete_records('mirotranslate', array('id' => $mirotranslate->id));
 

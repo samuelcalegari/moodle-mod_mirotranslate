@@ -25,8 +25,8 @@
 require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
 require_once(dirname(__FILE__).'/lib.php');
 
-$id = optional_param('id', 0, PARAM_INT); // course_module ID, or
-$n  = optional_param('n', 0, PARAM_INT);  // mirotranslate instance ID - it should be named as the first character of the module
+$id = optional_param('id', 0, PARAM_INT); // course_module ID, or.
+$n  = optional_param('n', 0, PARAM_INT);  // mirotranslate instance ID - it should be named as the first character of the module.
 
 if ($id) {
     $cm         = get_coursemodule_from_id('mirotranslate', $id, 0, false, MUST_EXIST);
@@ -50,16 +50,16 @@ $event->add_record_snapshot('course', $PAGE->course);
 $event->add_record_snapshot($PAGE->cm->modname, $mirotranslate);
 $event->trigger();
 
-// Print the page header
+// Print the page header.
 
 $PAGE->set_url('/mod/mirotranslate/view.php', array('id' => $cm->id));
 $PAGE->set_title($mirotranslate->name);
 $PAGE->set_heading($course->shortname);
 
-// Output starts here
+// Output starts here.
 echo $OUTPUT->header();
 
-// Replace the following lines with you own code
+// Replace the following lines with you own code.
 echo $OUTPUT->heading($mirotranslate->name);
 
 const RATIO = '1by1';
@@ -72,5 +72,5 @@ $renderer = $PAGE->get_renderer('mod_mirotranslate');
 $renderable = new \mod_mirotranslate\mirotranslate($mirotranslate);
 echo $renderer->render($renderable);
 
-// Finish the page
+// Finish the page.
 echo $OUTPUT->footer();

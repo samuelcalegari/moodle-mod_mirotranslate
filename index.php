@@ -24,7 +24,7 @@
 require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
 require_once(dirname(__FILE__).'/lib.php');
 
-$id = required_param('id', PARAM_INT);   // course
+$id = required_param('id', PARAM_INT);   // course.
 
 if (! $course = $DB->get_record('course', array('id' => $id))) {
     error('Course ID is incorrect');
@@ -39,7 +39,7 @@ $event = \mod_mirotranslate\event\course_module_instance_list_viewed::create($pa
 $event->add_record_snapshot('course', $course);
 $event->trigger();
 
-// Print the header
+// Print the header.
 
 $PAGE->set_url('/mod/mirotranslate/view.php', array('id' => $id));
 $PAGE->set_title($course->fullname);
@@ -47,7 +47,7 @@ $PAGE->set_heading($course->shortname);
 
 echo $OUTPUT->header();
 
-// Get all the appropriate data
+// Get all the appropriate data.
 
 if (! $mirotranslates = get_all_instances_in_course('mirotranslate', $course)) {
     echo $OUTPUT->heading(get_string('nomirotranslates', 'mirotranslate'), 2);
@@ -56,7 +56,7 @@ if (! $mirotranslates = get_all_instances_in_course('mirotranslate', $course)) {
     die();
 }
 
-// Print the list of instances (your module will probably extend this)
+// Print the list of instances (your module will probably extend this).
 
 $timenow  = time();
 $strname  = get_string('name');
@@ -76,10 +76,10 @@ if ($course->format == 'weeks') {
 
 foreach ($mirotranslates as $mirotranslate) {
     if (!$mirotranslate->visible) {
-        // Show dimmed if the mod is hidden
+        // Show dimmed if the mod is hidden.
         $link = '<a class="dimmed" href="view.php?id='.$mirotranslate->coursemodule.'">'.format_string($mirotranslate->name).'</a>';
     } else {
-        // Show normal if the mod is visible
+        // Show normal if the mod is visible.
         $link = '<a href="view.php?id='.$mirotranslate->coursemodule.'">'.format_string($mirotranslate->name).'</a>';
     }
 
@@ -93,6 +93,6 @@ foreach ($mirotranslates as $mirotranslate) {
 echo $OUTPUT->heading(get_string('modulenameplural', 'mirotranslate'), 2);
 print_table($table);
 
-// Finish the page
+// Finish the page.
 
 echo $OUTPUT->footer();

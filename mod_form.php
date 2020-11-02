@@ -33,10 +33,10 @@ class mod_mirotranslate_mod_form extends moodleform_mod {
         global $COURSE;
         $mform =& $this->_form;
 
-        // Add the "general" fieldset, where all the common settings are showed
+        // Add the "general" fieldset, where all the common settings are showed.
         $mform->addElement('header', 'general', get_string('general', 'form'));
 
-        // Add the standard "name" field
+        // Add the standard "name" field.
         $mform->addElement('text', 'name', get_string('mirotranslatename', 'mirotranslate'), array('size' => '64'));
         if (!empty($CFG->formatstringstriptags)) {
             $mform->setType('name', PARAM_TEXT);
@@ -47,19 +47,19 @@ class mod_mirotranslate_mod_form extends moodleform_mod {
         $mform->addRule('name', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
         $mform->addHelpButton('name', 'mirotranslatename', 'mirotranslate');
 
-        // Add the standard "externalurl" field
+        // Add the standard "externalurl" field.
         $mform->addElement('url', 'externalurl', get_string('externalurl', 'mirotranslate'), array('size' => '60'), array('usefilepicker' => true));
         $mform->setType('externalurl', PARAM_RAW_TRIMMED);
         $mform->addRule('externalurl', null, 'required', null, 'client');
         $mform->addHelpButton('externalurl', 'externalurl', 'mirotranslate');
 
-        // Add the standard "intro" and "introformat" fields
+        // Add the standard "intro" and "introformat" fields.
         $this->standard_intro_elements();
 
-        // Add standard elements, common to all modules
+        // Add standard elements, common to all modules.
         $this->standard_coursemodule_elements();
 
-        // Add standard buttons, common to all modules
+        // Add standard buttons, common to all modules.
         $this->add_action_buttons();
 
     }
