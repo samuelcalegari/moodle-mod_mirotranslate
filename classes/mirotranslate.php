@@ -29,6 +29,13 @@ use renderer_base;
 use templatable;
 use stdClass;
 
+/**
+ * The mod_mirotranslate main class.
+ *
+ * @package   mod_mirotranslate
+ * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class mirotranslate implements renderable, templatable {
 
     /**
@@ -58,6 +65,7 @@ class mirotranslate implements renderable, templatable {
     /**
      * Export this data so it can be used as the context for a mustache template.
      *
+     * @param renderer_base $output The output renderer object.
      * @return stdClass
      */
     public function export_for_template(renderer_base $output) {
