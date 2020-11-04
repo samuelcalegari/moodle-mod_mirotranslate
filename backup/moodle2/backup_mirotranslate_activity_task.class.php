@@ -14,14 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * Defines backup_mirotranslate_activity_task class
- *
- * @package   mod_mirotranslate
- * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
 defined('MOODLE_INTERNAL') || die;
 
 require_once($CFG->dirroot . '/mod/mirotranslate/backup/moodle2/backup_mirotranslate_stepslib.php');
