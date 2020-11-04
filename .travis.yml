@@ -24,6 +24,7 @@ env:
     - MOODLE_BRANCH=MOODLE_36_STABLE
     - MOODLE_BRANCH=MOODLE_37_STABLE
     - MOODLE_BRANCH=MOODLE_38_STABLE
+    - MUSTACHE_IGNORE_NAMES=mirotranslate.mustache
   matrix:
     - DB=pgsql
     - DB=mysqli
