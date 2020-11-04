@@ -62,7 +62,7 @@ echo $OUTPUT->header();
 // Replace the following lines with you own code.
 echo $OUTPUT->heading($mirotranslate->name);
 
-const RATIO = '1by1';
+const RATIO = '1by1'; // Video ratio.
 
 if ($mirotranslate->intro) {
     echo $OUTPUT->box(format_module_intro('mirotranslate', $mirotranslate, $cm->id), 'generalbox mod_introbox', 'mirotranslateintro');

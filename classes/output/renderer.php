@@ -28,6 +28,12 @@ defined('MOODLE_INTERNAL') || die;
 
 use plugin_renderer_base;
 
+/**
+ * Renderer for mod_mirotranslate.
+ *
+ * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class renderer extends plugin_renderer_base {
     /**
      * Defer to template.
