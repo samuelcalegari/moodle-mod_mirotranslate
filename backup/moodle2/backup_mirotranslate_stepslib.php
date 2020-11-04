@@ -16,7 +16,6 @@
 
 /**
  * @package   mod_mirotranslate
- * @category  backup
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
