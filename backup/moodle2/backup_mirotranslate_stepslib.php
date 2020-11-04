@@ -14,15 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-defined('MOODLE_INTERNAL') || die;
-
 /**
- * Define the complete mirotranslate structure for backup, with file and id annotations
- *
  * @package   mod_mirotranslate
  * @category  backup
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die;
+
+/**
+ * Define the complete mirotranslate structure for backup, with file and id annotations
  */
 class backup_mirotranslate_activity_structure_step extends backup_activity_structure_step {
 
