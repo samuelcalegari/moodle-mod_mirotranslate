@@ -15,16 +15,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file replaces the legacy STATEMENTS section in db/install.xml,
- * lib.php/modulename_install() post installation hook and partially defaults.php
+ * Post installation and migration code.
+ *
+ * This file replaces:
+ *   - STATEMENTS section in db/install.xml
+ *   - lib.php/modulename_install() post installation hook
+ *   - partially defaults.php
  *
  * @package   mod_mirotranslate
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+defined('MOODLE_INTERNAL') || die;
+
 /**
- * Post installation procedure
+ * xmldb_mirotranslate_install
+ *
+ * @return void
  */
 function xmldb_mirotranslate_install() {
 

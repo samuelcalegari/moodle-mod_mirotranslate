@@ -15,6 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
+ * List of mirotranslate(s) in course
  *
  * @package   mod_mirotranslate
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>

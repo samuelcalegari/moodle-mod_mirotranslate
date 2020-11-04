@@ -18,12 +18,17 @@
  * Structure step to restore one mirotranslate activity
  *
  * @package   mod_mirotranslate
+ * @category  backup
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 class restore_mirotranslate_activity_structure_step extends restore_activity_structure_step {
 
+    /**
+     * Defines structure of path elements to be processed during the restore
+     *
+     * @return array of {@link restore_path_element}
+     */
     protected function define_structure() {
 
         $paths = array();
@@ -33,6 +38,11 @@ class restore_mirotranslate_activity_structure_step extends restore_activity_str
         return $this->prepare_activity_structure($paths);
     }
 
+    /**
+     * Process the given restore path element data
+     *
+     * @param array $data parsed element data
+     */
     protected function process_mirotranslate($data) {
         global $DB;
 
@@ -46,6 +56,9 @@ class restore_mirotranslate_activity_structure_step extends restore_activity_str
         $this->apply_activity_instance($newitemid);
     }
 
+    /**
+     * Post-execution actions
+     */
     protected function after_execute() {
         // Add mirotranslate related files, no need to match by itemname (just internally handled context)
         $this->add_related_files('mod_mirotranslate', 'intro', null);
