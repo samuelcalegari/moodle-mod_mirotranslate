@@ -27,8 +27,7 @@ defined('MOODLE_INTERNAL') || die;
 require_once($CFG->dirroot . '/mod/mirotranslate/backup/moodle2/restore_mirotranslate_stepslib.php'); // Because it exists (must)
 
 /**
- * mirotranslate restore task that provides all the settings and steps to perform one
- * complete restore of the activity
+ * mirotranslate restore task that provides all the settings and steps to perform one complete restore of the activity
  *
  * @package   mod_mirotranslate
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
