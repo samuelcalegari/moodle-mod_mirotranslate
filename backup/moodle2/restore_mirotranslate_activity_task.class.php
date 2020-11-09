@@ -88,7 +88,7 @@ class restore_mirotranslate_activity_task extends restore_activity_task {
 
     /**
      * Define the restore log rules that will be applied
-     * by the when restoring course logs. It must return one array
+     * when restoring course logs. It must return one array
      *
      * Note this rules are applied when restoring course logs
      * by the restore final task, but are defined here at
