@@ -15,6 +15,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
+ * Define all the restore steps that will be used by the restore_mirotranslate_activity_task
+ *
  * @package   mod_mirotranslate
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -24,13 +26,17 @@ defined('MOODLE_INTERNAL') || die;
 
 /**
  * Structure step to restore one mirotranslate activity
+ *
+ * @package   mod_mirotranslate
+ * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class restore_mirotranslate_activity_structure_step extends restore_activity_structure_step {
 
     /**
      * Defines structure of path elements to be processed during the restore
      *
-     * @return array of {@link restore_path_element}
+     * @return array
      */
     protected function define_structure() {
 

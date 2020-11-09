@@ -15,6 +15,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
+ * Define all the backup steps that will be used by the backup_mirotranslate_activity_task
+ *
  * @package   mod_mirotranslate
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -24,6 +26,10 @@ defined('MOODLE_INTERNAL') || die;
 
 /**
  * Define the complete mirotranslate structure for backup, with file and id annotations
+ *
+ * @package   mod_mirotranslate
+ * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class backup_mirotranslate_activity_structure_step extends backup_activity_structure_step {
 
