@@ -15,8 +15,6 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines backup_mirotranslate_activity_task class
- *
  * @package   mod_mirotranslate
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -28,11 +26,6 @@ require_once($CFG->dirroot . '/mod/mirotranslate/backup/moodle2/backup_mirotrans
 
 /**
  * Provides the steps to perform one complete backup of the mirotranslate instance
- *
- * @package   mod_mirotranslate
- * @category  backup
- * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class backup_mirotranslate_activity_task extends backup_activity_task {
 

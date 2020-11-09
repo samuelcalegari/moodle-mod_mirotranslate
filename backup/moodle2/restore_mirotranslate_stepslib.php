@@ -15,12 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Structure step to restore one mirotranslate activity
- *
  * @package   mod_mirotranslate
- * @category  backup
  * @copyright 2020 Samuel Calegari <samuel.calegari@univ-perp.fr>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die;
+
+/**
+ * Structure step to restore one mirotranslate activity
  */
 class restore_mirotranslate_activity_structure_step extends restore_activity_structure_step {
 
