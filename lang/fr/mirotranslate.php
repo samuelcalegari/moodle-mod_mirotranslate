@@ -29,6 +29,7 @@ $string['modulenameplural'] = 'Miro Translate(s)';
 
 $string['mirotranslate'] = 'Miro Translate';
 $string['mirotranslate:addinstance'] = 'Ajouter un Miro Translate';
+$string['mirotranslate:view'] = 'Voir Miro Translate';
 $string['pluginadministration'] = 'Administration Miro Translate';
 $string['pluginname'] = 'Miro Translate';
 

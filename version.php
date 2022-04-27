@@ -24,9 +24,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020101500;            // The current module version (Date: YYYYMMDDXX)
+$plugin->version   = 2022042700;            // The current module version (Date: YYYYMMDDXX)
 $plugin->requires  = 2018050800;            // Requires this Moodle version
 $plugin->component = 'mod_mirotranslate';   // Full name of the plugin (used for diagnostics)
-$plugin->release = 'v1.1';
+$plugin->release = 'v1.2';
 $plugin->maturity = MATURITY_STABLE;
 $plugin->cron      = 0;
